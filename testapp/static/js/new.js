@@ -11,8 +11,9 @@ function sendMessage(e) {
         var messageDiv = document.createElement("div")
         messageDiv.className = "message"
 
-        var avatar = document.createElement("img")
-        avatar.src = "assets/user4.jpg"
+        // for self profile
+        //var avatar = document.createElement("img")
+        //avatar.src = "{% static 'images/user4.jpg' %}"
 
         var messageInfo = document.createElement("div")
         messageInfo.className = "message__info"
