@@ -8,6 +8,7 @@ body {
     display: flex;
     font-family: sans-serif;
     overflow: hidden;
+    background-color:#252525 ;
 }
 
 img {
@@ -16,16 +17,33 @@ img {
     border-radius: 50%;
     margin-top: 10px;
 }
+.serverss{margin-top: 50px;
+}
+.icon-set{
+    margin-top: 300px;
+    padding: 50px;
+    color: #fc3c3c;
+    font-size: 30px;
+}
+.icon-set:hover{
+    /* color: #fff; */
+    cursor: pointer;
+}
 
 .servers {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #23272a;
+    background-color: #333333;
     overflow-y: scroll;
-    height: 100vh;
+    height: 950px;
     width: 70px;
+    border-radius: 25px;
+    margin-left:18px ;
+    margin-top: 12px;
+    
+    
 }
 
 .logo > img {
@@ -34,6 +52,7 @@ img {
     border-radius: 30%;
     cursor: pointer;
     border: none;
+    
 }
 
 .logo::before {
@@ -44,6 +63,7 @@ img {
     top: 9%;
     left: 25%;
     background-color: #353a3f;
+   
 }
 
 .logo::after {
@@ -59,7 +79,9 @@ img {
 
 .server-logo {
     position: relative;
+    margin-top: 5px;
 }
+
 
 .server-logo > img {
     transition: 0.3s ease-in-out;
@@ -95,6 +117,18 @@ img {
     right: 10%;
     top: 70%;
 }
+.setting-box
+    
+{
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 50px;
+    color: #fc3c3c;
+    font-size: 30px;
+    
+}
 
 ::-webkit-scrollbar {
     width: 0;
@@ -105,24 +139,28 @@ img {
     flex-direction: column;
     row-gap: 20px;
     width: 250px;
-    height: 100vh;
-    background-color: #ffffff;
-    color: rgb(24, 22, 22);
+    height: 950px;
+    background-color: #333333;
+    color: #ffff;
+    border-radius: 25px;
+    margin-left: 14px;
+    margin-right: 14px;
+   margin-top: 12px;
 }
 
 .sidebar__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    background-color: #ffffff;
+    padding: 15px; border-radius: 25px;
+    background-color: #333333;
     color: #fff;
-    border-bottom: 2px solid #26282c;
+    
     height: 20px;
 }
 
 .sidebar__top > input {
-    border: none;
+    
     outline: none;
     display: flex;
     align-items: center;
@@ -162,8 +200,8 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #e8e4e4;
-    color: rgb(7, 6, 6);
+    background-color: #333333;
+    color: rgb(252, 252, 252);
 }
 
 .sidebar__header {
@@ -183,8 +221,8 @@ img {
     display: flex;
     padding: 5px;
     align-items: center;
-    background-color: #e8e4e4;
-    color: rgb(8, 8, 8);
+    background-color: #333333;
+    color: rgb(252, 250, 250);
     cursor: pointer;
 }
 
@@ -258,29 +296,38 @@ img {
 .chat {
     display: flex;
     flex-direction: column;
-    background-color: #ededed;
-    height: 100vh;
+    height: 950px;
+    margin-right: 14px;
+    margin-top: 12px;
+    max-width: 1300px;
     flex: 1;
+    border-radius: 25px;
+    background-color:#333333;
+    color: #fff;
 }
 
 .chatHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: rgb(14, 13, 13);
+    
     height: 50px;
-    border-bottom: 2px solid #26282c;
+    border-bottom: 2px solid #0858f8;
+    background-color: #1e1c1c;
+    border-radius: 25px;
+    box-shadow: #5971a2;
+    transition: all 0.3s;
 }
 
 .chatHeader__left {
     display: flex;
     align-items: center;
-    color: #171616;
+    
     font-size: 15px;
 }
 
 .chatHeader__Dm {
-    color: rgb(13, 12, 12);
+    
     font-size: 20px;
     padding: 10px;
 }
@@ -316,8 +363,9 @@ img {
 .message {
     display: flex;
     align-items: center;
+    
     padding: 20px;
-    color: #171616;
+    
 }
 
 .message__info {
@@ -325,7 +373,7 @@ img {
 }
 
 .message__timestamp {
-    color: rgb(20, 19, 19);
+   
     margin-left: 20px;
     font-size: x-small;
 }
@@ -340,7 +388,7 @@ img {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 25px;
     margin: 20px;
     background-color: #1e1c1c;
     color: lightgray;
@@ -367,7 +415,7 @@ img {
     margin-left: 10px;
 }
 
-@media (max-width: 840px) {
+@media (max-width: px) {
     .servers {
         display: none;
     }
@@ -415,10 +463,27 @@ img {
     }
 
     .chatHeader {
+       
         justify-content: center;
     }
 
     .chatHeader__left {
         display: none;
     }
+}
+
+.activity-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #333333;
+    width: 220px;
+    color: #fff;
+    margin-top: 12px;
+    border-radius: 25px;
+    height: 950px;
+}
+.activity__top{
+    margin-top: 10px;
 }
