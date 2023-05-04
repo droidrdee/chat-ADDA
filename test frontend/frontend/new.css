@@ -156,6 +156,8 @@ img {
     margin-left: 14px;
     margin-right: 14px;
    margin-top: 12px;
+   position: ;
+
 }
 
 .sidebar__top {
@@ -291,16 +293,49 @@ img {
 .sidebar__profileIcons > i {
     padding: 10px;
 }
+/* .server-classified{
+    overflow-y: scroll;
+    position: relative;
+} */
+.server-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 250px;
+    height: 950px;
+    background-color: #333333;
+    color: #ffff;
+    border-radius: 25px;
+    margin-left: 14px;
+    margin-right: 14px;
+   margin-top: 12px;
+}
 .server-name{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 220px;
     padding: 15px; border-radius: 25px;
     background-color: #1e1c1c;
     color: #fff;
     border-bottom: 2px solid #0858f8;
     height: 20px;
     font-size: 20px;
+    /* position: fixed; */
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+.server-type{
+    /* margin-top: 20px; */
+    position: relative;
+    /* set the height of scrolling div as per your requirement */
+    overflow-y: scroll;
+    /* add some padding to prevent content from being hidden behind fixed div */
+    /* padding-top:20px height of fixed div; */
+    overflow-y: scroll;
 }
 .server-text-header{
 
@@ -322,11 +357,11 @@ img {
     flex-direction: column;
 
 }
-.server-voice{
+.voice-heading{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px 7px;
+    padding: 15px 15px 7px;
     /* background-color: #1e1c1c; */
     color: #fff;
     border-bottom: 1px solid #111111;
@@ -336,7 +371,8 @@ img {
 }
 .sc{
     margin: 10px 0px 10px;
-    background-color: #191919;
+    padding: 2px;
+    /* background-color: #191919; */
 }
 .chat {
     display: flex;
