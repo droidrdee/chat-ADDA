@@ -160,6 +160,7 @@ img {
 
 }
 
+
 .sidebar__top {
     display: flex;
     justify-content: space-between;
@@ -578,3 +579,11 @@ img {
     border-bottom: 2px solid #0858f8;
     height: 20px;
 }
+.content {
+    display: none;
+  }
+  
+  .content.active {
+    display: block;
+    /* add any styling for active div here */
+  }
