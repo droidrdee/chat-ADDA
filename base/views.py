@@ -5,10 +5,25 @@ from django.contrib.auth import authenticate, login, logout
 from .forms import RoomForm, MyUserCreationForm
 
 
-
 def logoutUser(request):
     logout(request)
     return redirect('home')
+
+
+def loginPage(request):
+    return render(request, 'login.html')
+
+
+
+
+# def room(request):
+#     return (render, 'room.html')
+
+
+
+# def home(request):
+#     return redirect('home')
+
 
 
 def registerPage(request):
