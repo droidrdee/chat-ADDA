@@ -2,19 +2,20 @@
 * {
     margin: 0;
     padding: 0;
-    /* color: var(--first-color); */
+    /* color: white; */
+    
     
 }
 
 :root {
     --header-height: 3rem;
 
-    --hue-color: 110;
+    --hue-color: 112;
 
 
 
-
-    --first-color: hsl(var(--hue-color), 69%, 61%);
+    /* var(--hue-color), 69%, 61% */
+    --first-color: hsl(var(--hue-color),100%,100%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -150,6 +151,17 @@ img {
 .server-logo {
     position: relative;
     margin-top: 5px;
+    font-size: 30px;
+    font-size: 40px;
+    color:var(--first-color);
+    padding: 7px;
+    cursor: pointer;
+}
+.server-logo:hover{
+    color: var(--first-color);
+    background-color: var(--first-color-alt);
+    border-radius: 30%;
+    transition: 0.3s ease-in-out;
 }
 
 
@@ -187,6 +199,9 @@ img {
     right: 10%;
     top: 70%;
 }
+.direct_message_icon{
+
+}
 .ide{
     margin-top: 410px;
     display: flex;
@@ -200,6 +215,9 @@ img {
 .ide:hover{
     cursor: pointer;
     color: var(--first-color-alt);
+    
+    border-radius: 30%;
+    transition: 0.3s ease-in-out;
 }
 .ide1{
     
@@ -213,6 +231,10 @@ img {
 .ide1:hover{
     cursor: pointer;
     color: var(--first-color-alt);
+    
+    border-radius: 30%;
+    transition: 0.3s ease-in-out;
+    transition:;
 }
 .setting-box
 
@@ -224,12 +246,21 @@ img {
     padding: 20px;
     color: var(--first-color);
     font-size: 30px;
+    
 
 }
 .setting-box:hover{
     cursor: pointer;
     color: var(--first-color-alt);
+   
+    transform: rotate(60deg);
+    border-radius: 30%;
+    transition: 0.3s ease-in-out;
+    transition-duration: 0.1s;
+  
+ 
 }
+
 
 ::-webkit-scrollbar {
     width: 0;
@@ -423,7 +454,7 @@ img {
     padding: 15px; border-radius: 25px;
     background-color: #1e1c1c;
     color: var(--first-color);
-    border-bottom: 2px solid var(--body-color);
+    border-bottom: 2px solid #0858f8;
     height: 20px;
     font-size: 20px;
     /* position: fixed; */
