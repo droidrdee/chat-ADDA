@@ -9,7 +9,7 @@
 :root {
     --header-height: 3rem;
 
-    --hue-color: 112;
+    --hue-color: 110;
 
 
 
@@ -291,8 +291,13 @@ img {
 
 .sidebar__users {
     flex: 1;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
+.useer{
+        /* overflow: hidden; */
+        overflow-y: scroll;
+        max-height: 898px;
+        border-radius: 25px;}
 
 .sidebar__usersHeader {
     display: flex;
