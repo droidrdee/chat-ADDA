@@ -44,8 +44,10 @@
           </div>
           <div class="sidebar content" id="div1">
             <div class="sidebar__top">
-        <h2>Messages</h2>
-        <i class="fas fa-search fa-lg"></i>
+        <h2 id="message_search">Messages</h2>
+        <i class="fas fa-search fa-lg"id="search-icon"></i>
+        <div id="search-input" class="search-input"><input type="text"id="myInput"onkeyup="searchfun()" placeholder="Search"></div>
+        
       </div>
        <div class="useer" >
       <div class="sidebar__icon">
@@ -61,253 +63,91 @@
           <i class="fas fa-plus sidebar__addUser"></i>
         </div>
        
-          <div class="sidebar__user clickable-div"data-target="data-div-2">
+          <div class="sidebar__user">
             <div>
               <span class="status"></span>
               <img src="Deepak.jpg" alt="avatar" />
             </div>
-            <h4>Ayush</h4>
-          </div>
-          <div class="sidebar__user clickable-div"data-target="data-div-1">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
+            <h4 class="user_name">Ayush</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
               <img src="Deepak.jpg" alt="avatar" />
             </div>
-            <h4>Deepak</h4>
-          </div><div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div><div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div><div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div><div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div><div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div><div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div><div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div><div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div><div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div><div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div><div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div><div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div><div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div><div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
+            <h4 class="user_name">Deepak</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
               <img src="Deepak.jpg" alt="avatar" />
             </div>
-            <h4>Deepak</h4>
+            <h4 class="user_name">Dhruv</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
               <img src="Deepak.jpg" alt="avatar" />
             </div>
-            <h4>Deepak</h4>
+            <h4 class="user_name">Abhay</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
               <img src="Deepak.jpg" alt="avatar" />
             </div>
-            <h4>Deepak</h4>
+            <h4 class="user_name">Ayushhman</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
               <img src="Deepak.jpg" alt="avatar" />
             </div>
-            <h4>Deepak</h4>
+            <h4 class="user_name">Ankit</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
               <img src="Deepak.jpg" alt="avatar" />
             </div>
-            <h4>Deepak</h4>
+            <h4 class="user_name">Ayush</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
               <img src="Deepak.jpg" alt="avatar" />
             </div>
-            <h4>Deepak</h4>
+            <h4 class="user_name">divya</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
               <img src="Deepak.jpg" alt="avatar" />
             </div>
-            <h4>Deepak</h4>
+            <h4 class="user_name">deepak rathore</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
               <img src="Deepak.jpg" alt="avatar" />
             </div>
-            <h4>Deepak</h4>
+            <h4 class="user_name">raja</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
               <img src="Deepak.jpg" alt="avatar" />
             </div>
-            <h4>Deepak</h4>
+            <h4 class="user_name">Ayush kushwah</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
               <img src="Deepak.jpg" alt="avatar" />
             </div>
-            <h4>Deepak</h4>
+            <h4 class="user_name">Ayush</h4>
           </div>
-          <div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div>
-          <div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div>
-          <div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div>
-          <div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="dhruv.jpg" alt="avatar" />
-            </div>
-            <h4>Dhruv</h4>
-          </div>
-          <div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div><div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div><div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div><div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div><div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div><div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
-            </div>
-            <h4>Deepak</h4>
-          </div>
-          <div class="sidebar__user">
-            <div>
-              <span class="status"></span>
-              <img src="Ayush.jpg" alt="avatar" />
-            </div>
-            <h4>Ayush</h4>
-          </div>
+          
         </div>
       </div>
 
@@ -316,7 +156,11 @@
       
 
       <div class="server-name">
-        <h2>Server</h2>
+        <h2 id="message_search1">Servers</h2>
+        <i class="fas fa-search fa-lg"id="search-icon1"></i>
+       
+        <div id="search-input1" class="search-input"><input type="text"id="myInput1"onkeyup="searchfun1()" placeholder="Search"></div>
+
       </div>
       <div class="useer">
       <div class="server-type">

@@ -319,6 +319,26 @@ img {
     margin-left: 10px;
     font-weight: 600;
 }
+#search-input{
+    cursor: none;
+    display: none;
+}
+#search-input1{
+    cursor: none;
+    display: none;
+}
+.search-input input{
+   
+     width: 100%;
+padding: 10px; 
+border: 1px solid rgba(255,255,255,0.25);
+background:#1e1c1c;
+border-radius: 5px ;
+outline: none;
+border:none;
+color:#fff;
+font-size:1em;
+}
 
 .sidebar__users {
     flex: 1;
@@ -456,7 +476,7 @@ img {
     color: var(--first-color);
     border-bottom: 2px solid #0858f8;
     height: 20px;
-    font-size: 20px;
+    /* font-size: 20px; */
     /* position: fixed; */
   top: 0;
   left: 0;
@@ -630,6 +650,9 @@ img {
 
 .chat__inputIcons > i {
     margin-left: 10px;
+}
+.chat-box{
+    display: none;
 }
 
 @media (max-width: px) {
