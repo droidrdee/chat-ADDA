@@ -193,4 +193,92 @@ themeButton.addEventListener('click', () => {
 
 
 
+// var openChatButton = document.getElementById("open-chat-button");
+//   var chatBox = document.getElementById("chat-box");
+
+//   openChatButton.addEventListener("click", function() {
+//     chatBox.style.display = "block";
+//   });
+
+
+var searchIcon = document.getElementById("search-icon");
+var searchInput = document.getElementById("search-input");
+var message_sear=document.getElementById("message_search");
+searchIcon.addEventListener("click", function() {
+  searchIcon.style.display = "none";
+  message_sear.style.display="none";
+  searchInput.style.display = "block";
+});
+
+var searchIconn = document.getElementById("search-icon1");
+var searchInputt = document.getElementById("search-input1");
+var message_searr=document.getElementById("message_search1");
+searchIcon.addEventListener("click", function() {
+  searchIconn.style.display = "none";
+  message_searr.style.display="none";
+  searchInputt.style.display = "block";
+});
+
+
+
+
+
+// function searchfun() {
+//   // Get the input value and convert it to lowercase
+//   const input = document.getElementById("myInput");
+//   const filter = input.value.toLowerCase();
+
+//   // Get all the user name elements in the sidebar
+//   const userNames = document.querySelectorAll(".sidebar__user .user_name");
+
+//   // Loop through each user name element and hide or show it based on the filter
+//   userNames.forEach((userName) => {
+//     const name = userName.textContent.toLowerCase();
+//     if (name.includes(filter)) {
+//       userName.parentElement.style.display = "block";
+//     } else {
+//       userName.parentElement.style.display = "none";
+//     }
+//   });
+// }
+
+function searchfun() {
+  // Get the input value and convert it to lowercase
+  const input = document.getElementById("myInput");
+  const filter = input.value.toLowerCase();
+
+  // Get all the user elements in the sidebar
+  const users = document.querySelectorAll(".sidebar__user");
+
+  // Loop through each user element and hide or show it based on the filter
+  users.forEach((user) => {
+    const name = user.querySelector(".user_name").textContent.toLowerCase();
+    if (name.includes(filter)) {
+      user.style.display = "block";
+      user.style.display = "flex";
+    } else {
+      user.style.display = "none";
+    }
+  });
+}
+
+
+function searchfun1() {
+  let input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById("myInput1");
+  filter = input.value.toUpperCase();
+  ul = document.getElementsByTagName("ul")[0];
+  li = ul.getElementsByTagName("li");
+
+  for (i = 0; i < li.length; i++) {
+    a = li[i];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
 
