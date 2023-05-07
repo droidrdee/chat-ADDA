@@ -40,11 +40,12 @@ def loginPage(request):
 
 # def room(request):
 #     return (render, 'room.html')
-
+#   dhruv ka function
 
 
 # def home(request):
 #     return redirect('home')
+# ayush ka function
 
 
 
