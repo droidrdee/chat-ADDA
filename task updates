@@ -1,0 +1,14 @@
+
+in base.views
+    home
+    room
+    user profile
+    create room
+    update room 
+    delete room 
+    delete messege
+    topice page 
+    activity page
+    etc......
+
+
