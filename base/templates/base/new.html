@@ -1,19 +1,26 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ChatAdda</title>
-    <link rel="stylesheet" href="new.css" />
     <script src="https://kit.fontawesome.com/222cea3eed.js"></script>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_w3cub/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_w3cub/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_w3cub/favicon-16x16.png">
+    <link rel="icon" href="favicon_w3cub/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon_w3cub/favicon.ico">
     
   </head>
   <body class="dark-theme">
     <div class="servers">
       <div class="logo">
-        <img src="chatlogo.jpg" title="ChatAdda" alt="Chat-ADA" />
+        <img src={% static 'images/chatlogo.jpg' %} title="ChatAdda" alt="Chat-ADA" />
       </div>
       <div class="serverss">
         <div class="server-logo btn"data-target="div1">
@@ -46,7 +53,7 @@
             <div class="sidebar__top">
         <h2 id="message_search">Messages</h2>
         <i class="fas fa-search fa-lg"id="search-icon"></i>
-        <div id="search-input" class="search-input"><input type="text"id="myInput"onkeyup="searchfun()" placeholder="Search"></div>
+        <div id="search-input" class="search-input"><input type="text"id="myInput"onkeyup="searchfun()" placeholder="Search" ></div>
         
       </div>
        <div class="useer" >
@@ -66,84 +73,84 @@
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
+              <img src={% static 'images/Deepak.jpg' %} alt="avatar" />
             </div>
             <h4 class="user_name">Ayush</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
+              <img src={% static 'images/Deepak.jpg' %}alt="avatar" />
             </div>
             <h4 class="user_name">Deepak</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
+              <img src={% static 'images/Deepak.jpg' %} alt="avatar" />
             </div>
             <h4 class="user_name">Dhruv</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
+              <img src={% static 'images/Deepak.jpg' %} alt="avatar" />
             </div>
             <h4 class="user_name">Abhay</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
+              <img src={% static 'images/Deepak.jpg' %} alt="avatar" />
             </div>
             <h4 class="user_name">Ayushhman</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
+              <img src={% static 'images/Deepak.jpg' %} alt="avatar" />
             </div>
             <h4 class="user_name">Ankit</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
+              <img src={% static 'images/Deepak.jpg' %} alt="avatar" />
             </div>
             <h4 class="user_name">Ayush</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
+              <img src={% static 'images/Deepak.jpg' %} alt="avatar" />
             </div>
             <h4 class="user_name">divya</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
+              <img src={% static 'images/Deepak.jpg' %} alt="avatar" />
             </div>
             <h4 class="user_name">deepak rathore</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
+              <img src={% static 'images/Deepak.jpg' %} alt="avatar" />
             </div>
             <h4 class="user_name">raja</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
+              <img src={% static 'images/Deepak.jpg' %} alt="avatar" />
             </div>
             <h4 class="user_name">Ayush kushwah</h4>
           </div>
           <div class="sidebar__user">
             <div>
               <span class="status"></span>
-              <img src="Deepak.jpg" alt="avatar" />
+              <img src={% static 'images/Deepak.jpg' %} alt="avatar" />
             </div>
             <h4 class="user_name">Ayush</h4>
           </div>
@@ -276,7 +283,7 @@
       </div>
       <div class="chat__messages">
           <div class="message">
-              <img src="Deepak.jpg" alt="avatar">
+              <img src={% static 'images/Deepak.jpg' %} alt="avatar">
               <div class="message__info">
                   <h4>Deepak <span class="message__timestamp">26/04/2023</span></h4>
                   <p>Hello</p>
@@ -284,119 +291,119 @@
 
           </div>
           <div class="message">
-            <img src="Deepak.jpg" alt="avatar">
+            <img src={% static 'images/Deepak.jpg' %} alt="avatar">
             <div class="message__info">
                 <h4>Deepak <span class="message__timestamp">26/04/2023</span></h4>
                 <p>Hello</p>
             </div>
 
         </div><div class="message">
-          <img src="Deepak.jpg" alt="avatar">
+          <img src={% static 'images/Deepak.jpg' %} alt="avatar">
           <div class="message__info">
               <h4>Deepak <span class="message__timestamp">26/04/2023</span></h4>
               <p>Hello</p>
           </div>
 
       </div><div class="message">
-        <img src="Deepak.jpg" alt="avatar">
+        <img src={% static 'images/Deepak.jpg' %} alt="avatar">
         <div class="message__info">
             <h4>Deepak <span class="message__timestamp">26/04/2023</span></h4>
             <p>Hello</p>
         </div>
 
     </div><div class="message">
-      <img src="Deepak.jpg" alt="avatar">
+      <img src={% static 'images/Deepak.jpg' %} alt="avatar">
       <div class="message__info">
           <h4>Deepak <span class="message__timestamp">26/04/2023</span></h4>
           <p>Hello</p>
       </div>
 
   </div><div class="message">
-    <img src="Deepak.jpg" alt="avatar">
+    <img src={% static 'images/Deepak.jpg' %} alt="avatar">
     <div class="message__info">
         <h4>Deepak <span class="message__timestamp">26/04/2023</span></h4>
         <p>Hello</p>
     </div>
 
 </div><div class="message">
-  <img src="Deepak.jpg" alt="avatar">
+  <img src={% static 'images/Deepak.jpg' %} alt="avatar">
   <div class="message__info">
       <h4>Deepak <span class="message__timestamp">26/04/2023</span></h4>
       <p>Hello</p>
   </div>
 
 </div><div class="message">
-  <img src="Deepak.jpg" alt="avatar">
+  <img src={% static 'images/Deepak.jpg' %} alt="avatar">
   <div class="message__info">
       <h4>Deepak <span class="message__timestamp">26/04/2023</span></h4>
       <p>Hello</p>
   </div>
 
 </div><div class="message">
-  <img src="Deepak.jpg" alt="avatar">
+  <img src={% static 'images/Deepak.jpg' %} alt="avatar">
   <div class="message__info">
       <h4>Deepak <span class="message__timestamp">26/04/2023</span></h4>
       <p>Hello</p>
   </div>
 
 </div><div class="message">
-  <img src="Deepak.jpg" alt="avatar">
+  <img src={% static 'images/Deepak.jpg' %} alt="avatar">
   <div class="message__info">
       <h4>Deepak <span class="message__timestamp">26/04/2023</span></h4>
       <p>Hello</p>
   </div>
 
 </div><div class="message">
-  <img src="Deepak.jpg" alt="avatar">
+  <img src={% static 'images/Deepak.jpg' %} alt="avatar">
   <div class="message__info">
       <h4>Deepak <span class="message__timestamp">26/04/2023</span></h4>
       <p>Hello</p>
   </div>
 
 </div><div class="message">
-  <img src="Deepak.jpg" alt="avatar">
+  <img src={% static 'images/Deepak.jpg' %} alt="avatar">
   <div class="message__info">
       <h4>Deepak <span class="message__timestamp">26/04/2023</span></h4>
       <p>Hello</p>
   </div>
 
 </div><div class="message">
-  <img src="Deepak.jpg" alt="avatar">
+  <img src={% static 'images/Deepak.jpg' %} alt="avatar">
   <div class="message__info">
       <h4>Deepak <span class="message__timestamp">26/04/2023</span></h4>
       <p>Hello</p>
   </div>
 
 </div><div class="message">
-  <img src="Deepak.jpg" alt="avatar">
+  <img src={% static 'images/Deepak.jpg' %} alt="avatar">
   <div class="message__info">
       <h4>Deepak <span class="message__timestamp">26/04/2023</span></h4>
       <p>Hello</p>
   </div>
 
 </div><div class="message">
-  <img src="Deepak.jpg" alt="avatar">
+  <img src={% static 'images/Deepak.jpg' %} alt="avatar">
   <div class="message__info">
       <h4>Deepak <span class="message__timestamp">26/04/2023</span></h4>
       <p>Hello</p>
   </div>
 
 </div><div class="message">
-              <img src="Deepak.jpg" alt="avatar">
+              <img src={% static 'images/Deepak.jpg' %} alt="avatar">
               <div class="message__info">
                   <h4>Deepak <span class="message__timestamp">26/04/2023</span></h4>
                   <p>Hello</p>
               </div>
 
           </div><div class="message">
-              <img src="Deepak.jpg" alt="avatar">
+              <img src={% static 'images/Deepak.jpg' %} alt="avatar">
               <div class="message__info">
                   <h4>Deepak <span class="message__timestamp">26/04/2023</span></h4>
                   <p>Hello</p>
               </div>
 
           </div><div class="message">
-            <img src="Deepak.jpg" alt="avatar">
+            <img src={% static 'images/Deepak.jpg' %} alt="avatar">
             <div class="message__info">
                 <h4>Deepak <span class="message__timestamp">26/04/2023</span></h4>
                 <p>Hello</p>
@@ -404,14 +411,14 @@
 
         </div>
           <div class="message">
-            <img src="Deepak.jpg" alt="avatar">
+            <img src={% static 'images/Deepak.jpg' %} alt="avatar">
             <div class="message__info">
                 <h4>Deepak <span class="message__timestamp">26/04/2023</span></h4>
                 <p>Hello</p>
             </div>
 
         </div><div class="message">
-          <img src="Deepak.jpg" alt="avatar">
+          <img src={% static 'images/Deepak.jpg' %} alt="avatar">
           <div class="message__info">
               <h4>Deepak <span class="message__timestamp">26/04/2023</span></h4>
               <p>Hello</p>
@@ -439,8 +446,8 @@
       </div>
       
     </div>
+    <script src="{% static 'js/js.js' %}"></script>    
 
-    <script src="script.js"></script>
+    
   </body>
 </html>
-

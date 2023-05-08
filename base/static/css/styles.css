@@ -234,7 +234,6 @@ img {
     
     border-radius: 30%;
     transition: 0.3s ease-in-out;
-    transition:;
 }
 .setting-box
 
@@ -278,7 +277,6 @@ img {
     margin-left: 14px;
     margin-right: 14px;
    margin-top: 12px;
-   position: ;
    /* box-shadow: 2px 6px 100px #ffffffb6; */
 
 }
@@ -291,7 +289,7 @@ img {
     align-items: center;
     padding: 15px; border-radius: 25px;
     background-color: #1e1c1c;
-    color: color: var(--first-color);
+    color: var(--first-color);
     border-bottom: 2px solid #0858f8;
     height: 20px;
 }

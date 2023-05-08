@@ -1,11 +1,11 @@
 
-from django.contrib import admin
+# from django.contrib import admin
 
-# Register your models here.
+# # Register your models here.
 
-from .models import User, Room
+# from .models import User, Room
 
-admin.site.register(User)
-admin.site.register(Room)
-# admin.site.register(Topic)
-# admin.site.register(Message)
+# admin.site.register(User)
+# admin.site.register(Room)
+# # admin.site.register(Topic)
+# # admin.site.register(Message)
