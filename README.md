@@ -1,5 +1,5 @@
 # chat-ADA
-An ultimate web based chat applcation.
+An ultimate web based chat application.
 
 
 
